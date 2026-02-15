@@ -12,7 +12,6 @@ import ScrollToTop from './components/ScrollToTop'
 const App = () => {
   return (
     <>
-      <div className="bg-white dark:bg-black text-black dark:text-white min-h-screen transition-colors duration-300">
         <Header />
         <Hero />
         <About />
@@ -22,8 +21,6 @@ const App = () => {
         <Contact />
         <Footer />
         <ScrollToTop />
-      </div>
-
     </>
   )
 }
