@@ -12,15 +12,18 @@ import ScrollToTop from './components/ScrollToTop'
 const App = () => {
   return (
     <>
-      <Header />
-      <Hero />
-      <About />
-      <SkillsResume />
-      <Projects />
-      <Testimonials />
-      <Contact />
-      <Footer />
-      <ScrollToTop />
+      <div className="bg-white dark:bg-black text-black dark:text-white min-h-screen transition-colors duration-300">
+        <Header />
+        <Hero />
+        <About />
+        <SkillsResume />
+        <Projects />
+        <Testimonials />
+        <Contact />
+        <Footer />
+        <ScrollToTop />
+      </div>
+
     </>
   )
 }

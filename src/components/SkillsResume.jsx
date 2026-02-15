@@ -9,10 +9,13 @@ const SkillsResume = () => {
         }, 300);
     }, []);
     const skills = [
-        { name: "HTML", level: 90 },
-        { name: "CSS", level: 85 },
-        { name: "JavaScript", level: 80 },
-        { name: "React", level: 75 },
+        { name: "HTML5", level: 95 },
+        { name: "CSS3", level: 88 },
+        { name: "JavaScript (ES6+)", level: 85 },
+        { name: "Tailwind CSS", level: 91 },
+        { name: "Bootstrap 5", level: 90 },
+        { name: "DSA with C++ (Basics)", level: 95 },
+        { name: "React", level: 88 },
     ];
     return (
         <>

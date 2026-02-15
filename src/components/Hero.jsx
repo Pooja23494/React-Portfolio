@@ -1,4 +1,5 @@
 import React from 'react'
+import TypingEffect from './TypingEffect'
 
 const Hero = () => {
     return (
@@ -14,8 +15,7 @@ const Hero = () => {
                         </h1>
                         {/* TYPEWRITER EFFECT */}
                         <p className="typewriter text-lg md:text-2xl font-semibold text-white/80 dark:text-black/70">
-                            <span id="typed" />
-                            <span className="cursor" aria-hidden="true" />
+                            <TypingEffect/>
                         </p>
                         {/* SHORT TAGLINE */}
                         <p className="text-base md:text-lg leading-relaxed text-white/60 dark:text-black/60 max-w-xl">
