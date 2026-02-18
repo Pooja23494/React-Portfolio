@@ -5,7 +5,7 @@ const About = () => {
         <section
             id="about"
             className="py-20 bg-white dark:bg-neutral-950 
-            transition-colors duration-500"
+            transition-colors duration-500" data-reveal
         >
             <div className="max-w-6xl mx-auto px-5">
                 <div className="grid md:grid-cols-2 gap-12 items-center">

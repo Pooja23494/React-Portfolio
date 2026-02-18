@@ -25,7 +25,7 @@ const SkillsResume = () => {
     <section
       id="skills-resume"
       className="py-20 bg-white dark:bg-neutral-950 
-      transition-colors duration-500"
+      transition-colors duration-500" data-reveal
     >
       <div className="max-w-6xl mx-auto px-6">
 

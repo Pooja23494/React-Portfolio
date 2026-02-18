@@ -17,7 +17,7 @@ transition-colors duration-500">
                         Designed &amp; built by
                         <strong className="text-neutral-900 dark:text-white font-semibold"> Pooja Patel</strong> © 2025
                         <p className="text-xs mt-1">
-                            HTML • CSS • JavaScript • Tailwind CSS
+                            HTML • CSS • React Js. • Tailwind CSS
                         </p>
                     </div>
                     {/* Right */}

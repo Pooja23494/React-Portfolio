@@ -6,7 +6,7 @@ const Hero = () => {
         <section
             id="home"
             className="pt-20 min-h-screen flex items-center
-            bg-white dark:bg-neutral-950 transition-colors duration-500"
+            bg-white dark:bg-neutral-950 transition-colors duration-500" data-reveal
         >
             <div className="max-w-6xl mx-auto px-5 grid md:grid-cols-2 gap-10 items-center">
 

@@ -6,7 +6,7 @@ const Projects = () => {
             {/* PROJECTS Section Start */}
             <section
                 id="projects"
-                className="py-20 bg-white dark:bg-neutral-950 transition-colors duration-500"
+                className="py-20 bg-white dark:bg-neutral-950 transition-colors duration-500" data-reveal
             >
                 <div className="max-w-6xl mx-auto px-5">
                     {/* SECTION TITLE */}

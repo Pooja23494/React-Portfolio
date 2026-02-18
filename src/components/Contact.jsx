@@ -1,13 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Contact = () => {
+    const [message, setMessage] = useState("");
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        setMessage("Thanks! Message sent.");
+
+        setTimeout(() => {
+            setMessage("");
+        }, 4000);
+
+        e.target.reset();
+    }
     return (
         <>
             {/* CONTACT Section Start */}
             <section
                 id="contact"
                 className="py-20 bg-white dark:bg-neutral-950 
-  transition-colors duration-500"
+  transition-colors duration-500" data-reveal
             >
                 <div className="max-w-4xl mx-auto px-5">
                     {/* SECTION TITLE */}
@@ -32,7 +45,7 @@ text-neutral-900 dark:text-white">
 bg-neutral-100 dark:bg-neutral-900
 border border-neutral-200 dark:border-neutral-800
 shadow-md hover:shadow-lg transition">
-                            <form id="contactForm" method="post" className="mt-6 grid gap-4">
+                            <form id="contactForm" method="post" className="mt-6 grid gap-4" onSubmit={handleSubmit}>
                                 {/* Name & Email */}
                                 <div className="grid md:grid-cols-2 gap-4">
                                     <input name="name" aria-label="Your name" placeholder="Your name" required className="p-3 rounded-lg 
@@ -73,7 +86,11 @@ transition"
                                     >
                                         Send Message
                                     </button>
-                                    <div id="formMsg" className="text-sm text-neutral-600 dark:text-neutral-400" />
+                                    {message && (
+                                        <p className="mt-4 text-center text-green-500">
+                                            {message}
+                                        </p>
+                                    )}
                                 </div>
                             </form>
                         </div>

@@ -1,13 +1,14 @@
 import React from 'react'
+import Carousel from './Carousel'
 
 const Testimonials = () => {
     return (
         <>
             {/* TESTIMONIALS / SERVICES Section Start */}
             <section
-  id="testimonials"
-  className="py-20 bg-white dark:bg-neutral-950 transition-colors duration-500"
->
+                id="testimonials"
+                className="py-20 bg-white dark:bg-neutral-950 transition-colors duration-500" data-reveal
+            >
                 <div className="max-w-6xl mx-auto px-5">
                     {/* SECTION TITLE */}
                     <h2 className="text-4xl md:text-5xl font-extrabold mb-4 text-neutral-900 dark:text-white">
@@ -20,7 +21,7 @@ const Testimonials = () => {
                     </p>
                     <div className="relative overflow-hidden">
                         {/* CAROUSEL TRACK */}
-                        <div id="carousel-track" className="flex gap-4 md:gap-6 items-stretch min-h-64 md:min-h-72 px-[7.5%] md:px-0">
+                        <Carousel>
                             {/* TESTIMONIAL 1 */}
                             <div className="carousel-item shrink-0 w-full md:w-1/2 lg:w-1/3 px-2 md:px-4 flex">
                                 <div className="p-7 rounded-3xl bg-neutral-100 dark:bg-neutral-900
@@ -104,7 +105,7 @@ transition-all duration-300 flex flex-col w-full shadow-lg">
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </Carousel>
                         {/* CAROUSEL NAVIGATION BUTTONS */}
                         <button id="prev" className="hidden md:flex absolute top-1/2 -translate-y-1/2 left-0 bg-teal-500 hover:bg-teal-600 text-white
               rounded-full w-12 h-12 items-center justify-center shadow-lg transition">
