@@ -17,8 +17,8 @@ const SkillsResume = () => {
     { name: "JavaScript (ES6+)", level: 85 },
     { name: "Tailwind CSS", level: 91 },
     { name: "Bootstrap 5", level: 90 },
-    { name: "DSA with C++ (Basics)", level: 75 },
-    { name: "React", level: 88 },
+    { name: "DSA with C++ (Basics)", level: 95 },
+    { name: "React Js.", level: 88 },
   ];
 
   return (
@@ -114,7 +114,7 @@ const SkillsResume = () => {
                 </div>
 
                 <a
-                  href="/assets/PoojaPatel_Resume.pdf"
+                  href="./PoojaPatel_Resume.pdf"
                   download
                   className="w-full sm:w-auto text-center px-7 py-3 rounded-xl
                   bg-teal-500 text-black font-bold 

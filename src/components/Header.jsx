@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-function Header() {
+function Header({ activeSection }) {
   const [dark, setDark] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -51,17 +51,25 @@ function Header() {
         {/* Desktop Menu */}
         <nav className="hidden md:block">
           <ul className="flex items-center gap-7 text-sm font-medium">
-            {["Home", "About", "Skills", "Projects", "Contact"].map((item) => (
-              <li key={item}>
-                <a
-                  href={`#${item.toLowerCase().replace("skills", "skills-resume")}`}
-                  className="text-neutral-700 dark:text-neutral-300 
-                  hover:text-teal-500 transition-colors duration-300"
-                >
-                  {item}
-                </a>
-              </li>
-            ))}
+            {["Home", "About", "Skills", "Projects", "Testimonials", "Contact"].map((item) => {
+              const id = item.toLowerCase().replace("skills", "skills-resume");
+
+              return (
+                <li key={item}>
+                  <a
+                    href={`#${id}`}
+                    className={`transition-colors duration-300 
+          ${activeSection === id
+                        ? "text-teal-500 font-semibold"
+                        : "text-neutral-700 dark:text-neutral-300 hover:text-teal-500"
+                      }`}
+                  >
+                    {item}
+                  </a>
+                </li>
+              );
+            })}
+
           </ul>
         </nav>
 

@@ -39,8 +39,8 @@ const About = () => {
                                 "Bootstrap",
                                 "JavaScript",
                                 "Tailwind CSS",
-                                "Responsive Design",
-                                "Accessibility (WCAG)"
+                                "React Js.",
+                                "Responsive Design"
                             ].map((skill) => (
                                 <li
                                     key={skill}
