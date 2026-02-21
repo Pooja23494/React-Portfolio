@@ -45,10 +45,12 @@ const About = () => {
                                 <li
                                     key={skill}
                                     className="px-4 py-2 rounded-lg 
-                                    bg-neutral-100 dark:bg-neutral-800
-                                    text-neutral-800 dark:text-neutral-200
-                                    border border-neutral-200 dark:border-neutral-700
-                                    text-center transition"
+bg-neutral-100 dark:bg-neutral-800
+text-neutral-800 dark:text-neutral-200
+border border-neutral-200 dark:border-neutral-700
+text-center
+transition-all duration-300 ease-in-out
+hover:scale-102 hover:shadow-lg"
                                 >
                                     {skill}
                                 </li>

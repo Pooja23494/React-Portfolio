@@ -28,7 +28,7 @@ const Testimonials = () => {
 border border-neutral-200 dark:border-neutral-800
 hover:-translate-y-1 hover:shadow-xl
 transition-all duration-300 flex flex-col w-full h-full shadow-lg">
-                                    <p className="text-neutral-600 dark:text-neutral-400 mb-6 flex-grow text-sm leading-relaxed">
+                                    <p className="text-neutral-600 dark:text-neutral-400 mb-6 grow text-sm leading-relaxed">
                                         “Excellent work! The web design project exceeded expectations.
                                         Pooja delivered a clean, responsive website with intuitive navigation.”
                                     </p>
@@ -48,7 +48,7 @@ transition-all duration-300 flex flex-col w-full h-full shadow-lg">
 border border-neutral-200 dark:border-neutral-800
 hover:-translate-y-1 hover:shadow-xl
 transition-all duration-300 flex flex-col w-full h-full shadow-lg">
-                                    <p className="text-neutral-600 dark:text-neutral-400 mb-6 flex-grow text-sm leading-relaxed">
+                                    <p className="text-neutral-600 dark:text-neutral-400 mb-6 grow text-sm leading-relaxed">
                                         "Pooja created an engaging UI with smooth animations. Our project now feels
                                         interactive and professional."
                                     </p>
@@ -64,7 +64,7 @@ transition-all duration-300 flex flex-col w-full h-full shadow-lg">
 border border-neutral-200 dark:border-neutral-800
 hover:-translate-y-1 hover:shadow-xl
 transition-all duration-300 flex flex-col w-full h-full shadow-lg">
-                                    <p className="text-neutral-600 dark:text-neutral-400 mb-6 flex-grow text-sm leading-relaxed">
+                                    <p className="text-neutral-600 dark:text-neutral-400 mb-6 grow text-sm leading-relaxed">
                                         "Front-end development done professionally. Clean code, fast performance, and
                                         interactive features."
                                     </p>
@@ -80,7 +80,7 @@ transition-all duration-300 flex flex-col w-full h-full shadow-lg">
 border border-neutral-200 dark:border-neutral-800
 hover:-translate-y-1 hover:shadow-xl
 transition-all duration-300 flex flex-col w-full h-full shadow-lg">
-                                    <p className="text-neutral-600 dark:text-neutral-400 mb-6 flex-grow text-sm leading-relaxed">
+                                    <p className="text-neutral-600 dark:text-neutral-400 mb-6 grow text-sm leading-relaxed">
                                         "Professional, detail-oriented, and creative front-end development services."
                                     </p>
                                     <div className="mt-auto">
@@ -95,7 +95,7 @@ transition-all duration-300 flex flex-col w-full h-full shadow-lg">
 border border-neutral-200 dark:border-neutral-800
 hover:-translate-y-1 hover:shadow-xl
 transition-all duration-300 flex flex-col w-full h-full shadow-lg">
-                                    <p className="text-neutral-600 dark:text-neutral-400 mb-6 flex-grow text-sm leading-relaxed">
+                                    <p className="text-neutral-600 dark:text-neutral-400 mb-6 grow text-sm leading-relaxed">
                                         "Creative animations and clean front-end code. Highly recommended for web projects
                                         and portfolios."
                                     </p>
