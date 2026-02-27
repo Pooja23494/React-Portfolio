@@ -45,7 +45,7 @@ text-neutral-900 dark:text-white">
 bg-neutral-100 dark:bg-neutral-900
 border border-neutral-200 dark:border-neutral-800
 shadow-md hover:shadow-lg transition">
-                            <form id="contactForm" method="post" className="mt-6 grid gap-4" onSubmit={handleSubmit}>
+                            <form id="contactForm" action="https://formsubmit.co/poojapatel230494@gmail.com" method="post" className="mt-6 grid gap-4" onSubmit={handleSubmit}>
                                 {/* Name & Email */}
                                 <div className="grid md:grid-cols-2 gap-4">
                                     <input name="name" aria-label="Your name" placeholder="Your name" required className="p-3 rounded-lg 
