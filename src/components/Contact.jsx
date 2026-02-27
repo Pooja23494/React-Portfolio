@@ -9,7 +9,7 @@ const Contact = () => {
         const formData = new FormData(e.target);
 
         try {
-            await fetch("https://formsubmit.co/poojapatel230494@gmail.com", {
+            await fetch("93a1741eb25b54d53571e123ca6d7070", {
                 method: "POST",
                 body: formData
             });
