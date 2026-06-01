@@ -58,6 +58,7 @@ const About = () => {
           </div>
 
           {/* RIGHT */}
+
           <div className="grid grid-cols-2 gap-5">
             <div className="p-6 rounded-3xl bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800">
               <h3 className="text-3xl font-bold text-teal-500">10+</h3>
@@ -72,15 +73,15 @@ const About = () => {
             </div>
 
             <div className="p-6 rounded-3xl bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800">
-              <h3 className="text-3xl font-bold text-teal-500">React.js</h3>
-              <p className="text-sm text-neutral-500 mt-2">Primary Framework</p>
+              <h3 className="text-3xl font-bold text-teal-500">70+</h3>
+              <p className="text-sm text-neutral-500 mt-2">
+                GitHub Repositories
+              </p>
             </div>
 
             <div className="p-6 rounded-3xl bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800">
-              <h3 className="text-3xl font-bold text-teal-500">2026</h3>
-              <p className="text-sm text-neutral-500 mt-2">
-                Front-End Graduate
-              </p>
+              <h3 className="text-3xl font-bold text-teal-500">300+</h3>
+              <p className="text-sm text-neutral-500 mt-2">Commits</p>
             </div>
           </div>
         </div>
@@ -90,4 +91,3 @@ const About = () => {
 };
 
 export default About;
-
