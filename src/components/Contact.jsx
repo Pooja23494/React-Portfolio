@@ -1,116 +1,204 @@
-import React, { useState } from 'react'
+import { Mail, MapPin, Phone } from "lucide-react";
+import React, { useState } from "react";
+
 
 const Contact = () => {
-    const [message, setMessage] = useState("");
+  const [message, setMessage] = useState("");
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-        const formData = new FormData(e.target);
+    const formData = new FormData(e.target);
 
-        try {
-            await fetch("https://formsubmit.co/poojaclass1994@gmail.com", {
-                method: "POST",
-                body: formData
-            });
+    try {
+      await fetch("https://formsubmit.co/poojaclass1994@gmail.com", {
+        method: "POST",
+        body: formData,
+      });
 
-            setMessage("Thanks! Message sent.");
-            e.target.reset();
+      setMessage("✅ Message sent successfully!");
+      e.target.reset();
 
-            setTimeout(() => {
-                setMessage("");
-            }, 4000);
+      setTimeout(() => {
+        setMessage("");
+      }, 4000);
+    } catch (error) {
+      setMessage("❌ Something went wrong.");
+    }
+  };
 
-        } catch (error) {
-            setMessage("Something went wrong.");
-        }
-    };
-    return (
-        <>
-            {/* CONTACT Section Start */}
-            <section
-                id="contact"
-                className="py-20 bg-white dark:bg-neutral-950 
-  transition-colors duration-500" data-reveal
-            >
-                <div className="max-w-4xl mx-auto px-5">
-                    {/* SECTION TITLE */}
-                    <h2 className="text-4xl md:text-5xl font-extrabold mb-4 
-text-neutral-900 dark:text-white">
-                        Let’s <span className="text-teal-400">Connect</span>
-                    </h2>
-                    <p className="mb-8 text-neutral-600 dark:text-neutral-400 text-sm md:text-base">
-                        I’m currently open to <strong>internship</strong> and
-                        <strong>entry-level Front-End Developer</strong> opportunities.
-                        Whether you have a role, freelance project, or collaboration in mind,
-                        feel free to reach out. I specialize in
-                        <strong>responsive UI</strong>, <strong>JavaScript</strong>,
-                        and <strong>Tailwind CSS</strong>.
-                    </p>
-                    <div className="reveal" data-reveal>
-                        <h3 className="text-xl font-semibold mb-6 
-text-neutral-900 dark:text-white">
-                            Let’s build something impactful
-                        </h3>
-                        <div className="p-8 rounded-3xl 
-bg-neutral-100 dark:bg-neutral-900
-border border-neutral-200 dark:border-neutral-800
-shadow-md hover:shadow-lg transition">
-                            <form id="contactForm" className="mt-6 grid gap-4" onSubmit={handleSubmit}>
-                                {/* Name & Email */}
-                                <div className="grid md:grid-cols-2 gap-4">
-                                    <input name="name" aria-label="Your name" placeholder="Your name" required className="p-3 rounded-lg 
-bg-white dark:bg-neutral-800
-border border-neutral-300 dark:border-neutral-700
-text-neutral-900 dark:text-white
-placeholder-neutral-400 dark:placeholder-neutral-500
-focus:outline-none focus:ring-2 focus:ring-teal-500
-transition"
-                                    />
-                                    <input name="email" type="email" aria-label="Your email" placeholder="Your email" required className="p-3 rounded-lg 
-bg-white dark:bg-neutral-800
-border border-neutral-300 dark:border-neutral-700
-text-neutral-900 dark:text-white
-placeholder-neutral-400 dark:placeholder-neutral-500
-focus:outline-none focus:ring-2 focus:ring-teal-500
-transition"
-                                    />
-                                </div>
-                                {/* Message */}
-                                <textarea name="message" aria-label="Message" rows={6} placeholder="Tell me about your project" required className="p-3 rounded-lg 
-bg-white dark:bg-neutral-800
-border border-neutral-300 dark:border-neutral-700
-text-neutral-900 dark:text-white
-placeholder-neutral-400 dark:placeholder-neutral-500
-focus:outline-none focus:ring-2 focus:ring-teal-500
-transition"
-                                    defaultValue={""} />
-                                {/* Submit Button */}
-                                <div className="flex flex-col sm:flex-row items-center gap-4">
-                                    <button
-                                        type="submit"
-                                        className="px-6 py-3 
-  bg-teal-500 text-white 
-  rounded-lg font-semibold 
-  hover:bg-teal-600 
-  transition shadow-md hover:shadow-lg"
-                                    >
-                                        Send Message
-                                    </button>
-                                    {message && (
-                                        <p className="mt-4 text-center text-green-500">
-                                            {message}
-                                        </p>
-                                    )}
-                                </div>
-                            </form>
-                        </div>
-                    </div>
+  return (
+    <section
+      id="contact"
+      className="py-20 bg-white dark:bg-neutral-950 transition-colors duration-500"
+      data-reveal
+    >
+      <div className="max-w-6xl mx-auto px-5">
+        {/* Heading */}
+        <div className="text-center mb-14">
+          <span className="inline-block px-4 py-1 rounded-full bg-teal-500/10 text-teal-500 text-sm font-medium mb-4">
+            Contact
+          </span>
+
+          <h2 className="text-4xl md:text-5xl font-extrabold text-neutral-900 dark:text-white">
+            Let's <span className="text-teal-500">Connect</span>
+          </h2>
+
+          <p className="mt-5 max-w-2xl mx-auto text-neutral-600 dark:text-neutral-400">
+            I'm currently open to Front-End Developer, React.js Developer,
+            Internship, and Freelance opportunities. Feel free to reach out.
+          </p>
+        </div>
+
+        <div className="grid lg:grid-cols-2 gap-10">
+          {/* Left Side */}
+          <div className="p-8 rounded-3xl bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800">
+            <h3 className="text-2xl font-bold text-neutral-900 dark:text-white mb-6">
+              Get In Touch
+            </h3>
+
+            <div className="space-y-5">
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-xl bg-teal-500/10 flex items-center justify-center">
+                  <Mail className="text-teal-500" size={20} />
                 </div>
-            </section>
-            {/* CONTACT Section End */}
-        </>
-    )
-}
 
-export default Contact
+                <div>
+                  <p className="font-medium text-neutral-900 dark:text-white">
+                    Email
+                  </p>
+                  <p className="text-sm text-neutral-500">
+                    poojaclass1994@gmail.com
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-xl bg-teal-500/10 flex items-center justify-center">
+                  <Phone className="text-teal-500" size={20} />
+                </div>
+
+                <div>
+                  <p className="font-medium text-neutral-900 dark:text-white">
+                    Phone
+                  </p>
+                  <p className="text-sm text-neutral-500">+91 XXXXX XXXXX</p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-xl bg-teal-500/10 flex items-center justify-center">
+                  <MapPin className="text-teal-500" size={20} />
+                </div>
+
+                <div>
+                  <p className="font-medium text-neutral-900 dark:text-white">
+                    Location
+                  </p>
+                  <p className="text-sm text-neutral-500">
+                    Navsari, Gujarat, India
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Social Links */}
+            <div className="mt-10">
+              <h4 className="font-semibold text-neutral-900 dark:text-white mb-4">
+                Connect Online
+              </h4>
+
+              <div className="flex gap-4">
+                <a
+                  href="https://github.com/Pooja23494"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="w-12 h-12 rounded-xl bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 flex items-center justify-center hover:border-teal-500 transition"
+                >
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                    alt="GitHub"
+                    className="w-5 h-5 dark:invert"
+                  />
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/pooja-patel-aba85b303"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="w-12 h-12 rounded-xl bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 flex items-center justify-center hover:border-teal-500 transition"
+                >
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                    alt="LinkedIn"
+                    className="w-5 h-5"
+                  />
+                </a>
+              </div>
+            </div>
+
+            {/* Availability Card */}
+            <div className="mt-10 p-5 rounded-2xl bg-teal-500 text-black">
+              <h4 className="font-bold text-lg mb-2">
+                Available for Opportunities
+              </h4>
+
+              <p className="text-sm">
+                Open to Front-End Developer, React.js Developer, Internship, and
+                Freelance projects.
+              </p>
+            </div>
+          </div>
+
+          {/* Right Side - Form */}
+          <div className="p-8 rounded-3xl bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800">
+            <h3 className="text-2xl font-bold text-neutral-900 dark:text-white mb-6">
+              Send Message
+            </h3>
+
+            <form className="space-y-5" onSubmit={handleSubmit}>
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                required
+                className="w-full p-4 rounded-xl text-neutral-900 dark:text-white bg-white dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 focus:ring-2 focus:ring-teal-500 outline-none"
+              />
+
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+                className="w-full p-4 rounded- text-neutral-900 dark:text-white bg-white dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 focus:ring-2 focus:ring-teal-500 outline-none"
+              />
+
+              <textarea
+                rows="6"
+                name="message"
+                placeholder="Tell me about your project..."
+                required
+                className="w-full p-4 rounded-xl text-neutral-900 dark:text-white bg-white dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 focus:ring-2 focus:ring-teal-500 outline-none"
+              />
+
+              <button
+                type="submit"
+                className="w-full py-4 rounded-xl bg-teal-500 text-black font-bold hover:bg-teal-400 transition"
+              >
+                Send Message
+              </button>
+
+              {message && (
+                <p className="text-center text-green-500 font-medium">
+                  {message}
+                </p>
+              )}
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Contact;

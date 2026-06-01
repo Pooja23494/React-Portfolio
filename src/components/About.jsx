@@ -1,115 +1,93 @@
-import React from 'react'
+import React from "react";
 
 const About = () => {
-    return (
-        <section
-            id="about"
-            className="py-20 bg-white dark:bg-neutral-950 
-            transition-colors duration-500" data-reveal
-        >
-            <div className="max-w-6xl mx-auto px-5">
-                <div className="grid md:grid-cols-2 gap-12 items-center">
+  return (
+    <section
+      id="about"
+      className="py-20 bg-white dark:bg-neutral-950 transition-colors duration-500"
+    >
+      <div className="max-w-6xl mx-auto px-5">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* LEFT */}
+          <div>
+            <span className="inline-flex items-center px-4 py-2 rounded-full bg-teal-500/10 text-teal-500 text-sm font-medium mb-5">
+              About Me
+            </span>
 
-                    {/* ABOUT TEXT */}
-                    <div>
-                        <h2 className="text-4xl md:text-5xl font-extrabold 
-                        text-neutral-900 dark:text-white">
-                            About <span className="text-teal-500">Me</span>
-                        </h2>
+            <h2 className="text-4xl md:text-5xl font-extrabold text-neutral-900 dark:text-white leading-tight">
+              Front-End Developer Focused on Creating Exceptional User
+              Experiences
+            </h2>
 
-                        <p className="mt-6 max-w-xl text-base leading-relaxed 
-                        text-neutral-600 dark:text-neutral-400">
-                            I’m a front-end developer currently pursuing a{" "}
-                            <strong>Master in Front-End Development</strong> at{" "}
-                            <strong>Red &amp; White Skill Education</strong>. I focus on
-                            building responsive, accessible, and performance-optimized
-                            web interfaces that deliver clean UI and consistent user
-                            experiences across devices.
-                            <br /><br />
-                            I’m actively seeking a{" "}
-                            <strong>Junior Front-End / UI Developer</strong> role where I
-                            can apply my skills, contribute to real-world projects, and
-                            continue growing as a professional developer.
-                        </p>
+            <p className="mt-6 text-neutral-600 dark:text-neutral-400 leading-relaxed">
+              Hi, I'm <strong>Pooja Patel</strong>, a Front-End Developer who
+              has successfully completed the{" "}
+              <strong>Master in Front-End Development</strong>
+              program at <strong>Red & White Skill Education</strong>.
+            </p>
 
-                        {/* SKILLS */}
-                        <ul className="mt-8 grid grid-cols-2 sm:grid-cols-3 gap-4 text-sm">
-                            {[
-                                "HTML5 & CSS3",
-                                "Bootstrap",
-                                "JavaScript",
-                                "Tailwind CSS",
-                                "React Js.",
-                                "Responsive Design"
-                            ].map((skill) => (
-                                <li
-                                    key={skill}
-                                    className="px-4 py-2 rounded-lg 
-bg-neutral-100 dark:bg-neutral-800
-text-neutral-800 dark:text-neutral-200
-border border-neutral-200 dark:border-neutral-700
-text-center
-transition-all duration-300 ease-in-out
-hover:scale-102 hover:shadow-lg"
-                                >
-                                    {skill}
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
+            <p className="mt-4 text-neutral-600 dark:text-neutral-400 leading-relaxed">
+              I enjoy turning ideas into modern, responsive, and user-friendly
+              web applications. My primary focus is building clean interfaces,
+              reusable components, and smooth user experiences using React.js
+              and modern front-end technologies.
+            </p>
 
-                    {/* WHAT I BRING CARD */}
-                    <div>
-                        <div className="p-8 rounded-2xl 
-                        bg-neutral-100 dark:bg-neutral-900
-                        border border-neutral-200 dark:border-neutral-800
-                        shadow-lg transition-colors duration-500">
+            <p className="mt-4 text-neutral-600 dark:text-neutral-400 leading-relaxed">
+              Currently seeking opportunities as a Front-End Developer or
+              React.js Developer where I can contribute to real-world projects,
+              collaborate with experienced teams, and continue growing as a
+              software developer.
+            </p>
 
-                            <h3 className="text-xl font-semibold 
-                            text-neutral-900 dark:text-white">
-                                What I Bring to the Table
-                            </h3>
+            <div className="mt-8 flex flex-wrap gap-4">
+              <a
+                href="#projects"
+                className="px-6 py-3 rounded-xl bg-teal-500 text-black font-semibold hover:bg-teal-400 transition"
+              >
+                View Projects
+              </a>
 
-                            <p className="mt-4 text-sm leading-relaxed 
-                            text-neutral-600 dark:text-neutral-400">
-                                From micro-interactions and animated states to
-                                optimized markup and accessible components, I build{" "}
-                                <strong className="text-neutral-900 dark:text-white">
-                                    production-ready, high-performance
-                                </strong>{" "}
-                                front-end solutions with a strong focus on clean UI,
-                                usability, and smooth user experiences.
-                            </p>
-
-                            <div className="mt-6 flex gap-4 flex-wrap">
-                                <a
-                                    href="#projects"
-                                    className="px-5 py-2.5 rounded-lg 
-                                    border border-neutral-300 dark:border-neutral-700
-                                    text-neutral-800 dark:text-neutral-200
-                                    hover:bg-neutral-200 dark:hover:bg-neutral-800
-                                    transition"
-                                >
-                                    See Projects
-                                </a>
-
-                                <a
-                                    href="#contact"
-                                    className="px-6 py-2.5 rounded-lg 
-                                    bg-teal-500 text-black font-semibold
-                                    hover:bg-teal-400 transition"
-                                >
-                                    Let’s Talk
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
+              <a
+                href="#contact"
+                className="px-6 py-3 rounded-xl text-neutral-600 dark:text-neutral-400 border border-neutral-300 dark:border-neutral-700 hover:bg-neutral-100 dark:hover:bg-neutral-800 transition"
+              >
+                Contact Me
+              </a>
             </div>
-        </section>
-    )
-}
+          </div>
 
-export default About
+          {/* RIGHT */}
+          <div className="grid grid-cols-2 gap-5">
+            <div className="p-6 rounded-3xl bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800">
+              <h3 className="text-3xl font-bold text-teal-500">10+</h3>
+              <p className="text-sm text-neutral-500 mt-2">
+                Projects Completed
+              </p>
+            </div>
+
+            <div className="p-6 rounded-3xl bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800">
+              <h3 className="text-3xl font-bold text-teal-500">4+</h3>
+              <p className="text-sm text-neutral-500 mt-2">Certifications</p>
+            </div>
+
+            <div className="p-6 rounded-3xl bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800">
+              <h3 className="text-3xl font-bold text-teal-500">React.js</h3>
+              <p className="text-sm text-neutral-500 mt-2">Primary Framework</p>
+            </div>
+
+            <div className="p-6 rounded-3xl bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800">
+              <h3 className="text-3xl font-bold text-teal-500">2026</h3>
+              <p className="text-sm text-neutral-500 mt-2">
+                Front-End Graduate
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default About;
+

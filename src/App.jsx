@@ -8,6 +8,7 @@ import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import Certifications from "./components/Certifications";
 
 const App = () => {
   const [activeSection, setActiveSection] = useState("home");
@@ -64,6 +65,7 @@ const App = () => {
         <SkillsResume />
         <Projects />
         <Testimonials />
+        <Certifications />
         <Contact />
       </main>
 

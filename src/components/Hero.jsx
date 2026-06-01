@@ -1,107 +1,178 @@
-import React from 'react'
-import TypingEffect from './TypingEffect'
+import React from "react";
+import TypingEffect from "./TypingEffect";
 
 const Hero = () => {
-    return (
-        <section
-            id="home"
-            className="pt-20 min-h-screen flex items-center
-            bg-white dark:bg-neutral-950 transition-colors duration-500" data-reveal
-        >
-            <div className="max-w-6xl mx-auto px-5 grid md:grid-cols-2 gap-10 items-center">
+  return (
+    <section
+      id="home"
+      className="pt-20 min-h-screen flex items-center
+            bg-white dark:bg-neutral-950 transition-colors duration-500"
+      data-reveal
+    >
+      <div className="max-w-6xl mx-auto px-5 grid md:grid-cols-2 gap-10 items-center">
+        {/* INTRO TEXT */}
+        <div className="space-y-6">
+          <div
+            className="inline-flex items-center gap-2
+  px-4 py-2 rounded-full
+  bg-teal-500/10 text-teal-500
+  border border-teal-500/20
+  text-sm font-medium"
+          >
+            <span className="w-2 h-2 rounded-full bg-teal-500 animate-pulse"></span>
+            Open to Work
+          </div>
+          <p className="text-teal-500 uppercase tracking-widest text-xs font-semibold">
+            Hello 👋, I’m
+          </p>
 
-                {/* INTRO TEXT */}
-                <div className="space-y-6">
-                    <p className="text-teal-500 uppercase tracking-widest text-xs font-semibold">
-                        Hello 👋, I’m
-                    </p>
+          <h1
+            className="text-5xl md:text-7xl leading-[1.05] font-extrabold
+                        text-neutral-900 dark:text-white"
+          >
+            Pooja <span className="text-teal-500">Patel</span>
+          </h1>
 
-                    <h1 className="text-5xl md:text-7xl leading-[1.05] font-extrabold
-                        text-neutral-900 dark:text-white">
-                        Pooja <span className="text-teal-500">Patel</span>
-                    </h1>
+          {/* TYPEWRITER */}
+          <p
+            className="text-lg md:text-2xl font-semibold
+                        text-neutral-700 dark:text-neutral-300"
+          >
+            <TypingEffect />
+          </p>
 
-                    {/* TYPEWRITER */}
-                    <p className="text-lg md:text-2xl font-semibold
-                        text-neutral-700 dark:text-neutral-300">
-                        <TypingEffect />
-                    </p>
+          {/* TAGLINE */}
+          <p
+            className="text-base md:text-lg leading-relaxed
+  text-neutral-600 dark:text-neutral-400 max-w-xl"
+          >
+            Front-End Developer specializing in React.js, JavaScript, Tailwind
+            CSS, and responsive web applications. Recently completed a Master in
+            Front-End Development from Red & White Skill Education and actively
+            seeking opportunities to build modern, scalable, and user-focused
+            web experiences.
+          </p>
 
-                    {/* TAGLINE */}
-                    <p className="text-base md:text-lg leading-relaxed
-                        text-neutral-600 dark:text-neutral-400 max-w-xl">
-                        Front-End Developer specializing in responsive, accessible web interfaces.
-                        I build performance-optimized UIs using JavaScript, Tailwind CSS, and Bootstrap,
-                        focusing on clean layouts, usability, and cross-device consistency.
-                    </p>
+          {/* BUTTONS */}
+          <div className="flex flex-wrap gap-4 pt-2">
+            <a
+              href="#projects"
+              className="
+    px-6 py-3 rounded-xl
+    bg-teal-500 text-black
+    font-semibold
+    hover:bg-teal-400 transition"
+            >
+              View Projects
+            </a>
 
-                    {/* BUTTONS */}
-                    <div className="flex gap-4 items-center flex-wrap pt-2">
-                        <a
-                            href="#projects"
-                            className="inline-flex items-center gap-3 px-6 py-3 rounded-xl
-                            bg-linear-to-r from-teal-400 to-teal-600
-                            text-black font-bold shadow-lg hover:scale-105
-                            transition-transform duration-300"
-                        >
-                            View Work
-                        </a>
+            <a
+              href="/Resume/Pooja_Patel_Front_End_Developer_Resume.pdf"
+              target="_blank"
+              className="
+    px-6 py-3 rounded-xl
+    border border-neutral-300
+    dark:border-neutral-700
+    hover:bg-neutral-100
+    dark:hover:bg-neutral-800
+    transition text-neutral-600 dark:text-neutral-400"
+            >
+              Resume
+            </a>
 
-                        <a
-                            href="#contact"
-                            className="inline-flex items-center gap-3 px-5 py-3 rounded-xl
-                            border border-neutral-300 dark:border-neutral-700
-                            text-neutral-800 dark:text-white
-                            hover:bg-neutral-100 dark:hover:bg-neutral-800
-                            transition"
-                        >
-                            Contact Me
-                        </a>
-                    </div>
-                </div>
+            <a
+              href="#contact"
+              className="
+    px-6 py-3 rounded-xl
+    border border-neutral-300
+    dark:border-neutral-700
+    hover:bg-neutral-100
+    dark:hover:bg-neutral-800
+    transition text-neutral-600 dark:text-neutral-400"
+            >
+              Contact
+            </a>
+          </div>
+          
+        </div>
 
-                {/* PROFILE CARD */}
-                <div className="relative p-6 rounded-2xl
+        {/* PROFILE CARD */}
+        <div
+          className="relative p-6 rounded-2xl
                     bg-neutral-100 dark:bg-neutral-900
-                    transition-colors duration-500 shadow-lg">
+                    transition-colors duration-500 shadow-lg"
+        >
+          <div className="grid gap-4">
+            <div className="relative flex justify-center">
+              <div
+                className="
+    absolute w-52 h-52
+    rounded-full
+    bg-teal-500/20
+    blur-3xl"
+              />
 
-                    <div className="grid gap-4">
-                        <div className="w-full h-64 rounded-xl flex items-center justify-center">
-                            <img
-                                src="/Pooja.jpeg"
-                                alt="Pooja Patel – Front-End Developer"
-                                className="w-44 h-44 object-cover rounded-full
-                                border-4 border-teal-500 shadow-lg"
-                            />
-                        </div>
-
-                        <div className="grid grid-cols-2 gap-4 text-sm">
-                            <div className="p-4 rounded-xl
-                                border border-neutral-300 dark:border-neutral-700">
-                                <div className="text-xs text-neutral-500">
-                                    Location
-                                </div>
-                                <div className="font-semibold text-neutral-900 dark:text-white">
-                                    Navsari, India
-                                </div>
-                            </div>
-
-                            <div className="p-4 rounded-xl
-                                border border-neutral-300 dark:border-neutral-700">
-                                <div className="text-xs text-neutral-500">
-                                    Experience
-                                </div>
-                                <div className="font-semibold text-neutral-900 dark:text-white">
-                                    Fresher
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+              <img
+                src="/Pooja.jpeg"
+                alt="Pooja Patel"
+                className="
+    relative z-10
+    w-52 h-52
+    object-cover
+    rounded-full
+    border-4 border-teal-500
+    shadow-2xl"
+              />
             </div>
-        </section>
-    )
-}
 
-export default Hero
+            <div className="grid grid-cols-2 gap-4 text-sm">
+              <div
+                className="p-4 rounded-xl
+    border border-neutral-300 dark:border-neutral-700"
+              >
+                <div className="text-xs text-neutral-500">Location</div>
+
+                <div className="font-semibold text-neutral-900 dark:text-white">
+                  Navsari, Gujarat
+                </div>
+              </div>
+
+              <div
+                className="p-4 rounded-xl
+    border border-neutral-300 dark:border-neutral-700"
+              >
+                <div className="text-xs text-neutral-500">Status</div>
+
+                <div className="font-semibold text-teal-500">Open to Work</div>
+              </div>
+
+              <div
+                className="p-4 rounded-xl
+    border border-neutral-300 dark:border-neutral-700"
+              >
+                <div className="text-xs text-neutral-500">Qualification</div>
+
+                <div className="font-semibold text-neutral-900 dark:text-white">
+                  MFD 2026
+                </div>
+              </div>
+
+              <div
+                className="p-4 rounded-xl
+    border border-neutral-300 dark:border-neutral-700"
+              >
+                <div className="text-xs text-neutral-500">Focus</div>
+
+                <div className="font-semibold text-neutral-900 dark:text-white">
+                  React.js
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;

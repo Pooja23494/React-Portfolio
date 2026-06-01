@@ -1,146 +1,123 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 const SkillsResume = () => {
-  const [animate, setAnimate] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setAnimate(true);
-    }, 300);
-
-    return () => clearTimeout(timer);
-  }, []);
-
-  const skills = [
-    { name: "HTML5", level: 95 },
-    { name: "CSS3", level: 88 },
-    { name: "JavaScript (ES6+)", level: 85 },
-    { name: "Tailwind CSS", level: 91 },
-    { name: "Bootstrap 5", level: 90 },
-    { name: "DSA with C++ (Basics)", level: 95 },
-    { name: "React Js.", level: 88 },
+  const skillGroups = [
+    {
+      title: "Frontend",
+      skills: ["HTML5", "CSS3", "JavaScript", "React.js"],
+    },
+    {
+      title: "UI & Styling",
+      skills: ["Tailwind CSS", "Bootstrap", "Responsive Design"],
+    },
+    {
+      title: "Programming",
+      skills: ["C++", "DSA Basics", "ES6+"],
+    },
+    {
+      title: "Tools",
+      skills: ["Git", "GitHub", "VS Code", "Vercel"],
+    },
   ];
 
   return (
     <section
       id="skills-resume"
-      className="py-20 bg-white dark:bg-neutral-950 
-      transition-colors duration-500"
-      data-reveal
+      className="py-20 bg-white dark:bg-neutral-950 transition-colors duration-500"
     >
-      <div className="max-w-6xl mx-auto px-6">
-        {/* SECTION TITLE */}
-        <h2
-          className="text-4xl md:text-5xl font-extrabold mb-14 
-        text-neutral-900 dark:text-white"
-        >
-          Skills <span className="text-teal-500">&amp;</span> Resume
-        </h2>
+      <div className="max-w-6xl mx-auto px-5">
+        <span className="inline-flex items-center px-4 py-2 rounded-full bg-teal-500/10 text-teal-500 text-sm font-medium mb-5">
+          Skills & Resume
+        </span>
 
-        <div className="grid md:grid-cols-2 gap-14 items-start">
-          {/* LEFT : SKILLS */}
+        <div className="grid lg:grid-cols-2 gap-12">
+          {/* SKILLS */}
           <div>
-            <h3
-              className="text-2xl md:text-3xl font-bold mb-4 
-            text-neutral-900 dark:text-white"
-            >
-              Technical Skills
+            <h3 className="text-2xl md:text-3xl font-bold mb-4 text-neutral-900 dark:text-white">
+              Technical Expertise
             </h3>
 
-            <p
-              className="mb-10 max-w-md text-sm leading-relaxed 
-            text-neutral-600 dark:text-neutral-400"
-            >
-              Technologies and tools I use to build
-              <strong> responsive</strong>, <strong> accessible</strong>, and
-              <strong> performance-focused</strong> web interfaces.
+            <p className="text-neutral-600 dark:text-neutral-400 mb-8">
+              Technologies and tools I use to build modern, scalable, and
+              responsive web applications.
             </p>
 
-            <div className="space-y-6">
-              {skills.map((skill, index) => (
-                <div key={index}>
-                  <div
-                    className="flex justify-between mb-2 
-                  text-sm font-medium 
-                  text-neutral-800 dark:text-neutral-200"
-                  >
-                    <span>{skill.name}</span>
-                    <span>{skill.level}%</span>
-                  </div>
+            <div className="grid gap-5">
+              {skillGroups.map((group) => (
+                <div
+                  key={group.title}
+                  className="p-5 rounded-3xl bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 hover:border-teal-500 transition"
+                >
+                  <h4 className="font-semibold text-teal-500 mb-4">
+                    {group.title}
+                  </h4>
 
-                  <div
-                    className="w-full 
-                  bg-neutral-200 dark:bg-neutral-800 
-                  rounded-full h-3 overflow-hidden"
-                  >
-                    <div
-                      className="bg-teal-500 h-3 rounded-full 
-                      transition-all duration-1000 ease-out"
-                      style={{
-                        width: animate ? `${skill.level}%` : "0%",
-                      }}
-                    />
+                  <div className="flex flex-wrap gap-2 text-neutral-600 dark:text-neutral-400">
+                    {group.skills.map((skill) => (
+                      <span
+                        key={skill}
+                        className="px-3 py-2 rounded-full text-sm bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700"
+                      >
+                        {skill}
+                      </span>
+                    ))}
                   </div>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* RIGHT : RESUME */}
+          {/* RESUME */}
           <div>
-            <h3
-              className="text-2xl md:text-3xl font-bold mb-4 
-            text-neutral-900 dark:text-white"
-            >
-              Resume
-            </h3>
-
-            <p
-              className="mb-8 max-w-md text-sm leading-relaxed 
-            text-neutral-600 dark:text-neutral-400"
-            >
-              Download my resume to learn more about my education, technical
-              skills, and front-end projects focused on clean UI and responsive
-              design.
-            </p>
-
-            <div
-              className="p-8 rounded-2xl 
-            bg-neutral-100 dark:bg-neutral-900
-            border border-neutral-200 dark:border-neutral-800
-            shadow-lg transition-colors duration-500"
-            >
-              <div
-                className="flex flex-col gap-5 sm:flex-row 
-              sm:items-center sm:justify-between"
-              >
-                <div className="text-center sm:text-left">
-                  <p
-                    className="text-lg font-semibold 
-                  text-neutral-900 dark:text-white"
-                  >
-                    Pooja Patel
-                  </p>
-
-                  <p
-                    className="text-sm 
-                  text-neutral-500 dark:text-neutral-400"
-                  >
-                    Front-End Developer
-                  </p>
+            <div className="p-8 rounded-3xl bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 shadow-lg sticky top-24">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-20 h-20 rounded-full bg-teal-500 flex items-center justify-center text-black font-bold text-2xl">
+                  PP
                 </div>
 
-                <a
-                  href="./Resume/Pooja_Patel_Front_End_Developer_Resume.pdf"
-                  download
-                  className="w-full sm:w-auto text-center px-7 py-3 rounded-xl
-                  bg-teal-500 text-black font-bold 
-                  hover:bg-teal-400 transition
-                  focus:outline-none focus:ring-2 focus:ring-teal-400"
-                >
-                  Download Resume
-                </a>
+                <div>
+                  <h3 className="text-2xl font-bold text-neutral-900 dark:text-white">
+                    Pooja Patel
+                  </h3>
+
+                  <p className="text-neutral-500">Front-End Developer</p>
+                </div>
               </div>
+
+              <div className="space-y-4 mb-8 text-neutral-600 dark:text-neutral-400">
+                <div className="flex items-center gap-3">
+                  <span>✓</span>
+                  <p>React.js Development</p>
+                </div>
+
+                <div className="flex items-center gap-3">
+                  <span>✓</span>
+                  <p>Responsive UI Design</p>
+                </div>
+
+                <div className="flex items-center gap-3">
+                  <span>✓</span>
+                  <p>REST API Integration</p>
+                </div>
+
+                <div className="flex items-center gap-3">
+                  <span>✓</span>
+                  <p>MERN Stack Projects</p>
+                </div>
+
+                <div className="flex items-center gap-3">
+                  <span>✓</span>
+                  <p>Git & GitHub Workflow</p>
+                </div>
+              </div>
+
+              <a
+                href="./Resume/Pooja_Patel_Front_End_Developer_Resume.pdf"
+                download
+                className="block w-full text-center py-4 rounded-xl bg-teal-500 text-black font-bold hover:bg-teal-400 transition"
+              >
+                Download Resume
+              </a>
             </div>
           </div>
         </div>
@@ -150,3 +127,4 @@ const SkillsResume = () => {
 };
 
 export default SkillsResume;
+

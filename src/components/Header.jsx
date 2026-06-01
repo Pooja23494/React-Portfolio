@@ -11,7 +11,9 @@ function Header({ activeSection }) {
     if (savedTheme) {
       setDark(savedTheme === "dark");
     } else {
-      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      const prefersDark = window.matchMedia(
+        "(prefers-color-scheme: dark)",
+      ).matches;
       setDark(prefersDark);
     }
   }, []);
@@ -28,22 +30,26 @@ function Header({ activeSection }) {
   }, [dark]);
 
   return (
-    <header className="fixed w-full bg-white dark:bg-neutral-950 
-    shadow-md z-50 transition-colors duration-500">
-
+    <header
+      className="fixed w-full bg-white dark:bg-neutral-950 
+    shadow-md z-50 transition-colors duration-500"
+    >
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-
         {/* Logo */}
         <a href="#home" className="flex items-center gap-3 no-underline">
-          <div className="w-11 h-11 rounded-full 
+          <div
+            className="w-11 h-11 rounded-full 
           bg-linear-to-br from-teal-400 to-teal-600 
           flex items-center justify-center text-black font-extrabold 
-          tracking-wide shadow-md">
+          tracking-wide shadow-md"
+          >
             PP
           </div>
 
-          <span className="font-bold text-lg 
-          text-neutral-900 dark:text-white">
+          <span
+            className="font-bold text-lg 
+          text-neutral-900 dark:text-white"
+          >
             Pooja Patel
           </span>
         </a>
@@ -51,7 +57,15 @@ function Header({ activeSection }) {
         {/* Desktop Menu */}
         <nav className="hidden md:block">
           <ul className="flex items-center gap-7 text-sm font-medium">
-            {["Home", "About", "Skills", "Projects", "Testimonials", "Contact"].map((item) => {
+            {[
+              "Home",
+              "About",
+              "Skills",
+              "Projects",
+              "Testimonial",
+              "Certifications",
+              "Contact",
+            ].map((item) => {
               const id = item.toLowerCase().replace("skills", "skills-resume");
 
               return (
@@ -59,23 +73,22 @@ function Header({ activeSection }) {
                   <a
                     href={`#${id}`}
                     className={`transition-colors duration-300 
-          ${activeSection === id
-                        ? "text-teal-500 font-semibold"
-                        : "text-neutral-700 dark:text-neutral-300 hover:text-teal-500"
-                      }`}
+          ${
+            activeSection === id
+              ? "text-teal-500 font-semibold"
+              : "text-neutral-700 dark:text-neutral-300 hover:text-teal-500"
+          }`}
                   >
                     {item}
                   </a>
                 </li>
               );
             })}
-
           </ul>
         </nav>
 
         {/* Right Controls */}
         <div className="flex items-center gap-4">
-
           {/* Dark Mode Toggle */}
           <button
             onClick={() => setDark(!dark)}
@@ -97,13 +110,22 @@ function Header({ activeSection }) {
 
       {/* Mobile Menu */}
       {open && (
-        <div className="md:hidden 
+        <div
+          className="md:hidden 
         bg-white dark:bg-neutral-900 
         border-t border-neutral-200 dark:border-neutral-800 
-        transition-colors duration-300">
-
+        transition-colors duration-300"
+        >
           <ul className="flex flex-col px-6 py-4 space-y-4 text-sm">
-            {["Home", "About", "Skills", "Projects", "Contact"].map((item) => (
+            {[
+              "Home",
+              "About",
+              "Skills",
+              "Projects",
+              "Testimonial",
+              "Certifications",
+              "Contact",
+            ].map((item) => (
               <li key={item}>
                 <a
                   href={`#${item.toLowerCase().replace("skills", "skills-resume")}`}
