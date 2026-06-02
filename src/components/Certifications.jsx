@@ -5,22 +5,22 @@ const Certifications = () => {
     {
       title: "HTML & CSS Excellence Certificate",
       issuer: "NASSCOM Foundation (Cisco thingQbator)",
-      image: "/certificates/nasscom.jpg",
+      image: "/certificates/nasscom.webp",
     },
     {
       title: "HTML & CSS Crash Course",
       issuer: "Coursera | Scrimba",
-      image: "/certificates/coursera.jpg",
+      image: "/certificates/coursera.webp",
     },
     {
       title: "TECHWAR 2026 Participant",
       issuer: "C Tsunami",
-      image: "/certificates/techwarC.jpg",
+      image: "/certificates/techwarC.webp",
     },
     {
       title: "TECHWAR 2026 Participant",
       issuer: "WebHacks",
-      image: "/certificates/techwarWeb.jpg",
+      image: "/certificates/techwarWeb.webp",
     },
   ];
 
@@ -55,6 +55,9 @@ const Certifications = () => {
                 <img
                   src={cert.image}
                   alt={cert.title}
+                  width="600"
+                  height="800"
+                  loading="eager"
                   className="w-full h-64 object-cover
           group-hover:scale-105
           transition duration-500"

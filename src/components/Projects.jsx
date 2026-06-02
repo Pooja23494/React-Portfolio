@@ -14,7 +14,7 @@ const Projects = () => {
           <span className="inline-flex items-center px-4 py-2 rounded-full bg-teal-500/10 text-teal-500 text-sm font-medium mb-5">
             Featured Projects
           </span>
-          
+
           {/* FEATURED PROJECT */}
           <div className="mb-16 reveal" data-reveal>
             <div
@@ -24,8 +24,10 @@ const Projects = () => {
               {/* Image */}
               <div className="relative group overflow-hidden">
                 <img
-                  src="./project1.png"
+                  src="./project1.webp"
                   alt="Shivaji Good Poha website homepage"
+                  width="1200"
+                  height="675"
                   className="w-full h-full object-cover
                       transition-transform duration-500 group-hover:scale-105"
                   loading="lazy"
@@ -163,8 +165,10 @@ h-full flex flex-col shadow-md"
                 {/* Image */}
                 <div className="relative overflow-hidden">
                   <img
-                    src="./java-script-practical-exam-pooja.vercel.app_.png"
+                    src="./project2.webp"
                     alt="Stylish Web App Preview"
+                    width="800"
+                    height="450"
                     className="w-full h-full object-cover
         transition-transform duration-500 group-hover:scale-105"
                     loading="lazy"
@@ -309,8 +313,10 @@ h-full flex flex-col shadow-md"
                 {/* Image */}
                 <div className="relative overflow-hidden">
                   <img
-                    src="project5.png"
+                    src="project3.webp"
                     alt="QuickShow Movie Ticket Booking Platform"
+                    width="800"
+                    height="450"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     loading="lazy"
                   />
@@ -414,8 +420,10 @@ h-full flex flex-col shadow-md"
                 {/* Image */}
                 <div className="relative overflow-hidden">
                   <img
-                    src="./project4.png"
+                    src="./project4.webp"
                     alt="MERN Ecommerce Platform"
+                    width="800"
+                    height="450"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     loading="lazy"
                   />

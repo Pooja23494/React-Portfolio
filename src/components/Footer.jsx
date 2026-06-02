@@ -1,4 +1,6 @@
 import React from "react";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
@@ -71,35 +73,34 @@ const Footer = () => {
                 href="https://github.com/Pooja23494"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 hover:text-teal-500 transition"
+                className="group flex items-center gap-3 hover:text-teal-500 transition-all duration-300"
               >
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                  alt="GitHub"
-                  className="w-5 h-5 dark:invert"
-                />
-                GitHub
+                <FaGithub size={20} />
+                <span className="group-hover:translate-x-1 transition-transform">
+                  GitHub
+                </span>
               </a>
 
               <a
                 href="https://www.linkedin.com/in/pooja-patel-aba85b303"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 hover:text-teal-500 transition"
+                className="group flex items-center gap-3 hover:text-teal-500 transition-all duration-300"
               >
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
-                  alt="LinkedIn"
-                  className="w-5 h-5"
-                />
-                LinkedIn
+                <FaLinkedinIn size={20} />
+                <span className="group-hover:translate-x-1 transition-transform">
+                  LinkedIn
+                </span>
               </a>
 
               <a
                 href="mailto:poojaclass1994@gmail.com"
-                className="flex items-center gap-3 hover:text-teal-500 transition"
+                className="group flex items-center gap-3 hover:text-teal-500 transition-all duration-300"
               >
-                ✉️ Email
+                <MdEmail size={22} />
+                <span className="group-hover:translate-x-1 transition-transform">
+                  Email
+                </span>
               </a>
             </div>
           </div>

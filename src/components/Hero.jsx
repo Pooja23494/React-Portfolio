@@ -112,8 +112,12 @@ const Hero = () => {
               />
 
               <img
-                src="/Pooja.jpeg"
+                rel="preload"
+                src="/pooja.webp"
                 alt="Pooja Patel"
+                width="208"
+                height="208"
+                loading="eager"
                 className="
     relative z-10
     w-52 h-52
@@ -169,32 +173,32 @@ const Hero = () => {
             </div>
 
             <div className="mt-6 p-5 rounded-2xl border border-neutral-300 dark:border-neutral-700">
-  <h4 className="text-sm font-semibold uppercase tracking-wide text-teal-500 mb-3">
-    Currently Open For
-  </h4>
+              <h4 className="text-sm font-semibold uppercase tracking-wide text-teal-500 mb-3">
+                Currently Open For
+              </h4>
 
-  <div className="space-y-2 text-sm">
-    <div className="flex items-center gap-2 text-neutral-700 dark:text-neutral-300">
-      <span className="text-teal-500">✓</span>
-      Front-End Developer Roles
-    </div>
+              <div className="space-y-2 text-sm">
+                <div className="flex items-center gap-2 text-neutral-700 dark:text-neutral-300">
+                  <span className="text-teal-500">✓</span>
+                  Front-End Developer Roles
+                </div>
 
-    <div className="flex items-center gap-2 text-neutral-700 dark:text-neutral-300">
-      <span className="text-teal-500">✓</span>
-      React.js Developer Roles
-    </div>
+                <div className="flex items-center gap-2 text-neutral-700 dark:text-neutral-300">
+                  <span className="text-teal-500">✓</span>
+                  React.js Developer Roles
+                </div>
 
-    <div className="flex items-center gap-2 text-neutral-700 dark:text-neutral-300">
-      <span className="text-teal-500">✓</span>
-      Freelance Projects
-    </div>
+                <div className="flex items-center gap-2 text-neutral-700 dark:text-neutral-300">
+                  <span className="text-teal-500">✓</span>
+                  Freelance Projects
+                </div>
 
-    <div className="flex items-center gap-2 text-neutral-700 dark:text-neutral-300">
-      <span className="text-teal-500">✓</span>
-      Internship Opportunities
-    </div>
-  </div>
-</div>
+                <div className="flex items-center gap-2 text-neutral-700 dark:text-neutral-300">
+                  <span className="text-teal-500">✓</span>
+                  Internship Opportunities
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

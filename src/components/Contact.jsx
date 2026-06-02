@@ -1,6 +1,6 @@
 import { Mail, MapPin, Phone } from "lucide-react";
 import React, { useState } from "react";
-
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const Contact = () => {
   const [message, setMessage] = useState("");
@@ -113,26 +113,38 @@ const Contact = () => {
                   href="https://github.com/Pooja23494"
                   target="_blank"
                   rel="noreferrer"
-                  className="w-12 h-12 rounded-xl bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 flex items-center justify-center hover:border-teal-500 transition"
+                  aria-label="GitHub"
+                  className="
+      w-12 h-12 rounded-xl
+      bg-white dark:bg-neutral-800
+      border border-neutral-200 dark:border-neutral-700
+      flex items-center justify-center
+      text-neutral-700 dark:text-neutral-300
+      hover:text-teal-500 hover:border-teal-500
+      hover:-translate-y-1
+      transition-all duration-300
+    "
                 >
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                    alt="GitHub"
-                    className="w-5 h-5 dark:invert"
-                  />
+                  <FaGithub size={22} />
                 </a>
 
                 <a
                   href="https://www.linkedin.com/in/pooja-patel-aba85b303"
                   target="_blank"
                   rel="noreferrer"
-                  className="w-12 h-12 rounded-xl bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 flex items-center justify-center hover:border-teal-500 transition"
+                  aria-label="LinkedIn"
+                  className="
+      w-12 h-12 rounded-xl
+      bg-white dark:bg-neutral-800
+      border border-neutral-200 dark:border-neutral-700
+      flex items-center justify-center
+      text-neutral-700 dark:text-neutral-300
+      hover:text-teal-500 hover:border-teal-500
+      hover:-translate-y-1
+      transition-all duration-300
+    "
                 >
-                  <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
-                    alt="LinkedIn"
-                    className="w-5 h-5"
-                  />
+                  <FaLinkedinIn size={20} />
                 </a>
               </div>
             </div>
