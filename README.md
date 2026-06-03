@@ -1,16 +1,140 @@
-# React + Vite
+# 👋 Hi, I'm Pooja Patel
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Front-End Developer | React.js Developer | MERN Stack Enthusiast
 
-Currently, two official plugins are available:
+Welcome to my personal portfolio website! This portfolio showcases my projects, technical skills, education, certifications, and professional journey as a Front-End & MERN Stack Developer.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🌐 **Live Portfolio:** https://react-portfolio-poojapatel.vercel.app/
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 About Me
 
-## Expanding the ESLint configuration
+I am a passionate Front-End Developer currently completed a Master's in Front-End Development from Red & White Skill Education, Navsari.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+I enjoy building responsive, user-friendly, and modern web applications using React.js and the MERN Stack. My goal is to create seamless digital experiences while continuously learning new technologies and industry best practices.
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+- React.js
+- Redux Toolkit
+- Bootstrap
+- Tailwind CSS
+
+### Backend
+
+- Node.js
+- Express.js
+
+### Database
+
+- MongoDB
+
+### Tools & Platforms
+
+- Git
+- GitHub
+- Postman
+- Vercel
+- Render
+- VS Code
+
+---
+
+## ✨ Features
+
+- Modern Responsive Design
+- Smooth User Experience
+- Project Showcase
+- Skills Section
+- About Me Section
+- Contact Information
+- Resume Download
+- Mobile-Friendly Layout
+- Fast Performance
+
+---
+
+## 📂 Featured Projects
+
+### 🛒 MERN E-Commerce Website
+
+Full-stack e-commerce application with:
+
+- User Authentication
+- Product Management
+- Shopping Cart
+- Order Management
+- Admin Dashboard
+- Payment Integration
+
+**Tech Used:** React.js, Redux Toolkit, Node.js, Express.js, MongoDB
+
+---
+
+### 👨‍💼 Employee Management System
+
+Role-based employee management application built with Redux Toolkit.
+
+**Features:**
+
+- Authentication
+- Employee CRUD Operations
+- State Management
+- Responsive Design
+
+**Tech Used:** React.js, Redux Toolkit, Bootstrap
+
+---
+
+### 📝 Additional React Projects
+
+- Todo Applications
+- API Integration Projects
+- Dashboard Applications
+- Responsive UI Designs
+
+---
+
+## 🎓 Education
+
+**Master in Front-End Development**  
+Red & White Skill Education, Navsari
+
+---
+
+## 📈 Current Focus
+
+- Advanced React.js
+- MERN Stack Projects
+- Freelancing
+- Open Source Contributions
+
+---
+
+## 📬 Contact Me
+
+📧 Email: poojapatel230494@gmail.com
+
+💼 LinkedIn: https://www.linkedin.com/in/pooja-patel-aba85b303
+
+💻 GitHub: https://github.com/Pooja23494
+
+🌐 Portfolio: https://react-portfolio-poojapatel.vercel.app
+
+---
+
+## ⭐ Support
+
+If you like my work, please consider giving a ⭐ to my repositories and connecting with me on GitHub.
+
+---
+
+### Made with ❤️ by Pooja Patel
